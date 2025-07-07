@@ -1,0 +1,118 @@
+/* File: figma.css */
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #e0e1dd 25%, #f9f9f9 25%, #f9f9f9 50%, #e0e1dd 50%, #e0e1dd 75%, #f9f9f9 75%, #f9f9f9);
+  background-size: 20px 20px;
+  animation: backgroundAnimation 10s linear infinite;
+}
+@keyframes backgroundAnimation {
+  0% { background-position: 0 0; }
+  100% { background-position: 20px 20px; }
+}
+
+/* Navbar & Back Button */
+.navbar {
+  background-color: rgba(13, 27, 42, 0.9);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1000;
+}
+.logo {
+  color: #e0e1dd;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.back-btn {
+  background: #4d77ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.back-btn:hover {
+  background: #2b5797;
+}
+
+/* Figma Section */
+.figma-section {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+.figma-section h2 {
+  text-align: center;
+  margin-block-end: 2rem;
+  font-size: 2rem;
+  color: #1b263b;
+}
+.figma-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-inline-size: 1000px;
+  margin: auto;
+}
+.figma-text {
+  flex: 1 1 300px;
+}
+.figma-text ul {
+  list-style: none;
+  padding-inline-start: 1rem;
+}
+.figma-text li {
+  margin-block-end: 1rem;
+  position: relative;
+  padding-inline-start: 1.5rem;
+}
+.figma-text li::before {
+  content: '•';
+  position: absolute;
+  inset-inline-start: 0;
+  color: #4d77ff;
+}
+.figma-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.figma-image img {
+  max-inline-size: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.contact-footer {
+  text-align: center;
+  margin: 4rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .figma-content {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .back-btn {
+    margin-block-start: 1rem;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MySQL - Rizky Mahdi Hutomo</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="sql.css">
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos @2.3.4/dist/aos.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Rizky Mahdi Hutomo</div>
+    <a href="Home.html" class="back-btn">← Back to Portfolio</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <i class="fas fa-database tool-icon"></i>
+      <h1>MySQL</h1>
+      <p>Database Management & Query Optimization</p>
+    </div>
+  </section>
+
+  <!-- Skill Details -->
+  <section class="skill-details" data-aos="fade-up">
+    <h2>MySQL</h2>
+    <p>MySQL adalah sistem manajemen basis data relasional yang saya gunakan untuk menyimpan, mengambil, dan memanipulasi data secara efisien. Saya terbiasa dengan konsep seperti query optimasi, transaksi ACID, dan penggunaan stored procedures.</p>
+    
+    <h3>Key Concepts</h3>
+    <ul>
+      <li>Databases & Tables</li>
+      <li>CRUD Operations (INSERT, SELECT, UPDATE, DELETE)</li>
+      <li>Joins (INNER, LEFT, RIGHT)</li>
+      <li>Indexes & Performance</li>
+      <li>Transactions & ACID</li>
+      <li>Stored Procedures & Views</li>
+    </ul>
+
+    <h3>Interactive Demo</h3>
+    <button id="loadBtn">Load Sample Data</button>
+    <div id="table-container"></div>
+  </section>
+
+  <!-- Footer -->
+  <div class="contact-footer">
+    <p>© 2025 Rizky Mahdi Hutomo | Information Systems Student</p>
+  </div>
+
+  <!-- AOS Initialization -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
+  <!-- Interactive Demo Script -->
+  <script src="sql.js"></script>
+</body>
+</html>

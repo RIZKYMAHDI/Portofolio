@@ -1,0 +1,128 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #e0e1dd 25%, #f9f9f9 25%, #f9f9f9 50%, #e0e1dd 50%, #e0e1dd 75%, #f9f9f9 75%, #f9f9f9);
+  background-size: 20px 20px;
+  animation: backgroundAnimation 10s linear infinite;
+}
+@keyframes backgroundAnimation {
+  0% { background-position: 0 0; }
+  100% { background-position: 20px 20px; }
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(13, 27, 42, 0.9);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1000;
+}
+.logo {
+  color: #e0e1dd;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+.back-btn {
+  background: #4d77ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.back-btn:hover {
+  background: #2b5797;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1b263b, #0f1a2c);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-block-end: 1rem;
+}
+
+/* Skill Details */
+.skill-details {
+  max-inline-size: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.skill-details h2 {
+  margin-block-end: 1rem;
+  color: #1b263b;
+}
+.skill-details ul {
+  list-style: disc inside;
+  margin-block-end: 1rem;
+}
+.skill-details li {
+  margin-block-end: 0.5rem;
+}
+
+/* Interactive Demo */
+.interactive {
+  margin-block-start: 1.5rem;
+}
+.interactive input {
+  inline-size: 100%;
+  max-inline-size: 120px;
+  padding: 0.5rem;
+  margin-inline-end: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.interactive button {
+  padding: 0.5rem 1rem;
+  background: #254e70;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.interactive button:hover {
+  background: #1b3a58;
+}
+.output-box {
+  margin-block-start: 1rem;
+  padding: 1rem;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+/* Footer */
+.contact-footer {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .skill-details { padding: 1.5rem; }
+}

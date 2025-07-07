@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C++ - Rizky Mahdi Hutomo</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="Cplus.css">
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos @2.3.4/dist/aos.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Rizky Mahdi Hutomo</div>
+    <a href="Home.html" class="back-btn">← Back to Portfolio</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <i class="fab fa-cuttlefish tool-icon"></i>
+      <h1>C++</h1>
+      <p>High-Performance Systems & Game Development</p>
+    </div>
+  </section>
+
+  <!-- Skill Details -->
+  <section class="skill-details" data-aos="fade-up">
+    <h2>C++</h2>
+    <p>C++ adalah bahasa pemrograman berorientasi objek yang saya kuasai untuk pengembangan aplikasi berperforma tinggi seperti game engine, sistem operasi, dan perangkat tertanam. Saya terbiasa dengan konsep seperti pointer, templates, dan manajemen memori manual.</p>
+    
+    <h3>Key Concepts</h3>
+    <ul>
+      <li>Syntax & Data Types (int, double, char, dll.)</li>
+      <li>Control Flow (if, switch, loops)</li>
+      <li>Pointers & References</li>
+      <li>Classes & Inheritance</li>
+      <li>Templates & STL (vector, map, dll.)</li>
+      <li>Memory Management (new/delete)</li>
+    </ul>
+
+    <h3>Interactive Demo</h3>
+    <p>Masukkan jumlah bilangan Fibonacci yang ingin dihasilkan:</p>
+    <input type="number" id="inputN" min="1" max="20" placeholder="e.g. 7">
+    <button id="runBtn">Generate Fibonacci</button>
+    <pre id="output" class="output-box"></pre>
+  </section>
+
+  <!-- Footer -->
+  <div class="contact-footer">
+    <p>© 2025 Rizky Mahdi Hutomo | Information Systems Student</p>
+  </div>
+
+  <!-- AOS Initialization -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
+  <!-- Interactive Demo Script -->
+  <script src="Cplus.js"></script>
+</body>
+</html>
